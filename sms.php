@@ -20,9 +20,8 @@ try {
             $msg_type = 'LMS';
         $rest = new Message($api_key, $api_secret);
         $options = new stdClass();
-        $options->to = '01190005719,01022125719'; // 수신번호
-        // $options->to = '01022125719'; // 수신번호
-        $options->from = '01022125719'; // 발신번호
+        $options->to = '###,###'; // 수신번호
+        $options->from = '###'; // 발신번호
         $options->type = $msg_type; // Message type ( SMS, LMS, MMS, ATA )
         $options->text = "{$items}"; // 문자내용
         // $options->charset = 'euckr'; // 문자내용
